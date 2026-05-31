@@ -37,11 +37,18 @@ The underlying grid layout adapts cleanly to window resizing events using a prop
    git clone [https://github.com/yourusername/gui-calendar.git](https://github.com/yourusername/gui-calendar.git)
    cd gui-calendar
 Install Extended Dependencies (If using modern widget stylesheets or custom animations)Bashpip install customtkinter
-Verify Database StructureThe application will automatically initialize a secure calendar_events.db file in the root directory on its initial launch cycle.🎮 How To Run & Interactive HotkeysLaunch the master calendar display application window through your terminal terminal structure:Bashpython gui_calendar.py
-Once the graphical interface initializes, navigate dates smoothly or use these keyboard shortcut hotkeys to trigger actions live:Key / ActionAction RoutineDescriptionESCExit ApplicationFlushes active UI changes and safely terminates background database pipelines.Left / Right ArrowsShift MonthInstantly slides the grid layout to the previous or next month view.Up / Down ArrowsShift YearJumps the entire calendar matrix forward or backward by a full year.tJump to TodayInstantly resets the grid view back to the current system date cell.nCycle Interface ThemeSwitches visual appearance tokens instantly between light, dark, and cyber aesthetics.📂 Project Structure OverviewPlaintext├── gui_calendar.py             # Main graphical layout engine and event loop
+Verify Database StructureThe application will automatically initialize a secure calendar_events.db file in the root directory on its initial launch cycle.
+
+🎮 How To Run & Interactive HotkeysLaunch the master calendar display application window through your terminal terminal structure:Bashpython gui_calendar.py
+Once the graphical interface initializes, navigate dates smoothly or use these keyboard shortcut hotkeys to trigger actions live:Key / ActionAction RoutineDescriptionESCExit ApplicationFlushes active UI changes and safely terminates background database pipelines.Left / Right ArrowsShift MonthInstantly slides the grid layout to the previous or next month view.Up / Down ArrowsShift YearJumps the entire calendar matrix forward or backward by a full year.tJump to TodayInstantly resets the grid view back to the current system date cell.nCycle Interface ThemeSwitches visual appearance tokens instantly between light, dark, and cyber aesthetics.
+
+📂 Project Structure OverviewPlaintext
+
+├── gui_calendar.py             # Main graphical layout engine and event loop
 ├── database_manager.py         # SQLite CRUD abstraction query layers
 ├── config.json                 # Persists custom visual themes and widget sizes
 ├── assets/                     # UI icons and custom styling assets
 │   └── tray_icon.png
 └── README.md                   # Repository Documentation
+
 📝 LicenseDistributed under the MIT License. See LICENSE for more information.
